@@ -1,0 +1,36 @@
+//to activate env in ubuntu server
+source /home/ubuntu/myenv/bin/activate
+
+//to connect to EC2
+ssh -i pemfilename.pem  ubuntu@10.200.27.41
+
+//to copy a file from your system to EC2 machine
+scp -i  pemfilename.pem delete_old_backup_tables.py  ubuntu@10.200.27.41:ingestion/delete_old_backup_tables.py
+
+//to copy a folder from your system to EC2 machine
+scp -i pemfilename.pem -r C:\Users\ShashwatKumar\Desktop\Folder_Name ubuntu@10.200.27.41:/folder/
+
+
+//move all files within a directory to another path
+1. go to the directory where u have all files
+2. mv * /home/ubuntu/brix_ingestion/
+or
+mv -v /home/ubuntu/zpizza_ingestion/zpizza_ingestion/* /home/ubuntu/zpizza_ingestion/
+
+//download a folder from server to your local machine
+scp -i pemfilename.pem ubuntu@10.200.27.41:intel_ingestion .
+
+//download a file from server to your local machine
+scp -i hxdataplatform.pem ubuntu@10.200.27.41:dbt/target/index.html .
+
+//remove a file
+rm tbls_creation_log.log
+
+find and replace on ec2
+sed -i 's/print/logging.info/g' read_files.py
+
+//to move files from ec2 to s3
+aws s3 cp /home/ubuntu/hyvee_test/test/downloads/TransactionDetails_20211108.csv.gz s3://hypersonixdata/Smart_n_Final/upload_test/TransactionDetails_20211108.csv.gz 
+
+#to pass git without worrying about precommits :)
+git commit -n -m "precommits kyu pass karu, main kaunsa achha developer hu"
