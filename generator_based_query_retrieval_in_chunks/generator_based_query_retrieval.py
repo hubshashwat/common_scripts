@@ -1,6 +1,6 @@
 '''
 A generator based python code to fetch 10,000 rows at a time
-from ms-sql server to a csv. This saves memory.
+from sql server to a csv. This saves memory.
 '''
 
 import csv

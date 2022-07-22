@@ -85,8 +85,8 @@ class PythonGitlab:
 if __name__ == "__main__":
     PythonGitlab(
         url="https://gitlab.com/",
-        authkey=YOUR PERSONAL ACCESS TOKEN,
-        project=USERNAME/PROJECT_NAME,
+        authkey="YOUR PERSONAL ACCESS TOKEN",
+        project="USERNAME/PROJECT_NAME",
     ).upload_a_file(
         place=r"raw/config.yaml",
         branch_name="test",
