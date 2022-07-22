@@ -1,4 +1,5 @@
-Step1:
+**_Steps:_**
+
 
 0) Clone this repo. cd to common_scripts/gitlab_to_github_migration.
 
@@ -9,4 +10,4 @@ To do so:
 
 Post this step, all repos should be created. This script will generate a text file with all the http url links of the gitlab account you have to migrate.
 
-2) Run scripts.py and wait.
+2) Configure your git credentials on terminal and add your username in scripts.py for github and run scripts.py and wait for it's execution.
