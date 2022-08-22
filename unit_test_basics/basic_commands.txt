@@ -1,0 +1,9 @@
+Pre-commit pass while pushing:
+poetry run pre-commit run --all-files
+
+Coverage for tests:
+poetry run pytest tests --cov=folder/sub_folder --cov-report=html
+
+To run a single test kept inside a file:
+poetry run pytest tests/tasks/test_file.py -k "method_name"
+
