@@ -5,6 +5,9 @@ A repository containing some common purpose scripts that are helpful for data/so
 </p>
 
 1. Generator based Query Retrieval
-2. Downloading from SFTP based on last_modified_time (last x days, hours or minutes)
+2. Downloading from SFTP:
+- based on last_modified_time (last x days, hours or minutes)
+- download all folders to local, and create a tar file for each folder
 3. Gitlab to Github Migration
 4. How to use Python Gitlab to automate creation of a branch, pushing the code to that branch and create a merge request.
+5. A basic PDF Reader
