@@ -15,3 +15,4 @@ A repository containing some common purpose scripts that are helpful for data/so
 7. Verify sftp conenctions with and without proxy
 8. How to check for checksum between two files to know if there has been a modification.
 9. Pgp file decryption script
+10. Medium site alive checker
